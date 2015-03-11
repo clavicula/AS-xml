@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="false" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="wiz.xml.XMLReader"/>
+    <classEntry path="wiz.xml.XMLReaderUTF8"/>
+    <classEntry path="wiz.xml.XMLWriter"/>
+    <classEntry path="wiz.xml.XMLWriterUTF8"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
