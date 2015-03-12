@@ -107,7 +107,7 @@ package wiz.xml {
 			const reader:XMLReader = createXMLReader();
 			try {
 				reader.read(sourceXMLPath);
-				Assert.fail("Except: ArgumentError");
+				Assert.fail("Expect: ArgumentError");
 			}
 			catch (e:ArgumentError) {}
 		}
@@ -125,7 +125,7 @@ package wiz.xml {
 			const reader:XMLReader = createXMLReader();
 			try {
 				reader.read(sourceXMLPath);
-				Assert.fail("Except: ArgumentError");
+				Assert.fail("Expect: ArgumentError");
 			}
 			catch (e:ArgumentError) {}
 		}
@@ -145,7 +145,7 @@ package wiz.xml {
 			const reader:XMLReader = createXMLReader();
 			try {
 				reader.read(sourceXMLPath);
-				Assert.fail("Except: IOError");
+				Assert.fail("Expect: IOError");
 			}
 			catch (e:IOError) {}
 		}
@@ -194,7 +194,7 @@ package wiz.xml {
 				const reader:XMLReader = createXMLReader();
 				try {
 					reader.read(sourceXMLPath);
-					Assert.fail("Except: IOError");
+					Assert.fail("Expect: IOError");
 				}
 				catch (e:IOError) {}
 			}
@@ -286,7 +286,7 @@ package wiz.xml {
 				const reader:XMLReader = createXMLReader();
 				try {
 					reader.read(sourceXMLPath);
-					Assert.fail("Except: TypeError");
+					Assert.fail("Expect: TypeError");
 				}
 				catch (e:TypeError) {}
 			}
@@ -319,7 +319,7 @@ package wiz.xml {
 					const reader:XMLReader = createXMLReader();
 					try {
 						reader.read(sourceXMLPath);
-						Assert.fail("Except: IOError");
+						Assert.fail("Expect: IOError");
 					}
 					catch (e:IOError) {}
 				}

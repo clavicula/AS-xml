@@ -172,7 +172,7 @@ package wiz.xml {
 				const writer:XMLWriter = createXMLWriter();
 				try {
 					writer.write(sourceXML, destXMLPath);
-					Assert.fail("Except: ArgumentError");
+					Assert.fail("Expect: ArgumentError");
 				}
 				catch (e:ArgumentError) {
 					Assert.assertFalse(destXMLFile.exists);
@@ -203,7 +203,7 @@ package wiz.xml {
 			const writer:XMLWriter = createXMLWriter();
 			try {
 				writer.write(sourceXML, destXMLPath);
-				Assert.fail("Except: ArgumentError");
+				Assert.fail("Expect: ArgumentError");
 			}
 			catch (e:ArgumentError) {}
 		}
@@ -226,7 +226,7 @@ package wiz.xml {
 			const writer:XMLWriter = createXMLWriter();
 			try {
 				writer.write(sourceXML, destXMLPath);
-				Assert.fail("Except: ArgumentError");
+				Assert.fail("Expect: ArgumentError");
 			}
 			catch (e:ArgumentError) {}
 		}
@@ -254,7 +254,7 @@ package wiz.xml {
 				const writer:XMLWriter = createXMLWriter();
 				try {
 					writer.write(sourceXML, destXMLPath);
-					Assert.fail("Except: IOError");
+					Assert.fail("Expect: IOError");
 				}
 				catch (e:IOError) {
 					Assert.assertMatch(/.*testWrite_Error_FileAlreadyExist\.xml.*/, e.message);
@@ -290,7 +290,7 @@ package wiz.xml {
 				const writer:XMLWriter = createXMLWriter();
 				try {
 					writer.write(sourceXML, destXMLPath, true);  // 明示的に上書きフラグを指定
-					Assert.fail("Except: IOError");
+					Assert.fail("Expect: IOError");
 				}
 				catch (e:IOError) {
 					Assert.assertTrue(destXMLFile.isDirectory);
@@ -330,7 +330,7 @@ package wiz.xml {
 					const writer:XMLWriter = createXMLWriter();
 					try {
 						writer.write(sourceXML, destXMLPath, true);  // 明示的に上書きフラグを指定
-						Assert.fail("Except: IOError");
+						Assert.fail("Expect: IOError");
 					}
 					catch (e:IOError) {}
 				}
